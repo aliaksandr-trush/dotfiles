@@ -1,0 +1,12 @@
+.cache/
+.cargo/
+.ssh/
+Documents/
+go/
+Music/
+Pictures/
+Projects/
+Public/
+RustoverProjects/
+Templates/
+Videos/
