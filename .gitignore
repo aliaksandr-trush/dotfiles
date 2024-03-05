@@ -10,3 +10,8 @@ Public/
 RustoverProjects/
 Templates/
 Videos/
+.bash_history
+.mycli.log
+.viminfo
+.var/app
+.config/tmux/plugins

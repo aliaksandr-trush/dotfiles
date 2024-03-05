@@ -6,9 +6,9 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:$HOME/go/bin:" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+    PATH="$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$PATH"
 fi
 export PATH
 
@@ -53,7 +53,7 @@ export BASH_IT_THEME='atomic'
 # export BASH_IT_DEVELOPMENT_BRANCH='master'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+export GIT_HOSTING='git@github.com'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -65,7 +65,7 @@ export IRC_CLIENT='irssi'
 export TODO="t"
 
 # Set this to the location of your work or project folders
-#BASH_IT_PROJECT_PATHS="${HOME}/Projects:/Volumes/work/src"
+BASH_IT_PROJECT_PATHS="${HOME}/Projects"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
